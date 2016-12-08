@@ -1,6 +1,6 @@
 
 不懂得知识点：
-promise，loadsh（学习），react
+promise，loadsh（学习），react，vue2.0
 iview中notice组件实现的原理
 
 
@@ -17,19 +17,18 @@ webpack的原理
 vue的实现vm动态绑定的原理
 http和https的区别：（端口号不同）
 node
-图片实现懒加载
-移动端解决点击延迟的问题（fastclick）
-移动端（tap）点透问题
 transform和transtion
 
 
 
 新学的知识点：
+变量和函数声明的提升
 slide实现的原理：transform和tanslateZ(100%),transtion
 移动端1px问题（设置一个height：1px的div）
 vue实现双向绑定：object.defineProperty给data中的数据设置getter和setter
+图片实现懒加载:判断滚轮滚动的距离，和目标元素的offset.top比较，然后将data-src中的内容赋值到src中
 图片懒加载原理：判断轮播的索引，然后将data-src中的内容赋值到src中
 arguments.callee的妙用：用于函数表达式中的递归
-
-
+移动端（tap）点透问题：因为touchstart早于touchend早于click，touch事件结束也会触发下面元素的click事件。
+移动端解决点击延迟的问题（fastclick）：解决方法：使用最新的zepto，阻止事件源元素的默认preventDefault()(不触发click事件),fastclick.js
 
