@@ -21,7 +21,7 @@ http和https的区别：（端口号不同）
 node  
 transform和transtion
 base64,utf-8编码解码
-
+冒泡和捕获，事件代理
 
 
 新学的知识点：
