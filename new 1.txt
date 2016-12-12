@@ -3,6 +3,7 @@
 promise，loadsh（学习），react，vue2.0
 iview中notice组件实现的原理
 CSS3动画
+去设计一个编译器
 
 
 模糊的知识点：
@@ -19,6 +20,7 @@ vue的实现vm动态绑定的原理
 http和https的区别：（端口号不同）
 node  
 transform和transtion
+base64,utf-8编码解码
 
 
 
