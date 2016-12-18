@@ -35,3 +35,6 @@ arguments.callee的妙用：用于函数表达式中的递归
 移动端（tap）点透问题：因为touchstart早于touchend早于click，touch事件结束也会触发下面元素的click事件。
 移动端解决点击延迟的问题（fastclick）：解决方法：使用最新的zepto，阻止事件源元素的默认preventDefault()(不触发click事件),fastclick.js
 
+
+(全站HTTPS来了)[http://mp.weixin.qq.com/s?__biz=MzA3NTYzODYzMg==&mid=402615812&idx=1&sn=b6dae639119bb66e7025321254b8d973&scene=1&srcid=122439MA3l7gRwfjgNOB76pA#rd]
+(魅族SF博客)[https://segmentfault.com/blog/meizu]
