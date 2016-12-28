@@ -4,6 +4,7 @@ promise，loadsh（学习），react，vue2.0
 iview中notice组件实现的原理
 CSS3动画
 去设计一个编译器
+PHP框架：Laravel学习
 
 
 模糊的知识点：
