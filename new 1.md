@@ -4,7 +4,7 @@ promise，loadsh（学习），react，vue2.0
 iview中notice组件实现的原理
 CSS3动画
 去设计一个编译器
-PHP框架：Laravel学习
+PHP框架：Laravel学习 yii
 
 
 模糊的知识点：
@@ -27,7 +27,6 @@ base64,utf-8编码解码
 ### avalon 实现原理
 ### 双向绑定的实现
 ### js的块级作用域和this的类似动态作用域
-### Nginx的配置
 
 新学的知识点：
 变量和函数声明的提升
