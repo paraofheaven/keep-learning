@@ -23,6 +23,7 @@ node
 transform和transtion
 base64,utf-8编码解码
 冒泡和捕获，事件代理
+session和cookie的区别
 
 
 新学的知识点：
