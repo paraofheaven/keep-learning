@@ -46,7 +46,7 @@ react:
 1):react createClass，创建的组件只能有一个根节点，这个根节点可以有任意层的子节点。
 2):不要直接修改state,而应该使用setState（应该是用于触发组件lifecycle hook）。唯一一个可以直接修改state的地方是constructor。
 3):循环list时需要给每个子项加个string类型的key，如ul下的li，react会根据key来确认items have changed or add or removed。不给的话会报警告
-4):
+
 
 (全站HTTPS来了)[http://mp.weixin.qq.com/s?__biz=MzA3NTYzODYzMg==&mid=402615812&idx=1&sn=b6dae639119bb66e7025321254b8d973&scene=1&srcid=122439MA3l7gRwfjgNOB76pA#rd]
 (魅族SF博客)[https://segmentfault.com/blog/meizu]
