@@ -24,6 +24,12 @@ transform和transtion
 base64,utf-8编码解码
 冒泡和捕获，事件代理
 session和cookie的区别
+网络安全和XSS攻击:
+	SQL注入：前端执行url查询，后端拿到url参数后执行了数据库查询，如果后端没过滤就执行语句，攻击者就可以随意操控数据库。
+			前后端对参数都进行过滤。
+	XSS攻击：标签内容需要过滤、转义
+	将cookie设为http only，不允许用户随意修改。实现session标记。HTTP引用头检查。对请求的所有内容进行可靠验证，包括url，查询关键字，HTTP头，POST数据。仅支持符合预期的内容，其他一概过滤。
+	img、script、iframe标签都是不受同源策略限制的
 
 
 新学的知识点：
@@ -41,6 +47,8 @@ session和cookie的区别
 - 数组不要用for in：for in循环内部使用getOwnpropertyNames获取可轮询的属性，数据中有一些可enumable属性会被循环出来，如：array.prototype的自定义事件，都会被循环出来。所有有对原型扩展的对象使用for in都应该在其中使用hasOwnproperty判断一下。
 - new对象的过程
 - webpack import&require css的坑：import命令会有提升效果，会提升到模块的头部，首先执行。
+- instanceof运算符可以用来判断某个构造函数的prototype属性是否存在另外一个要检测对象的原型链上。如a instanceof A ,判断A.prototype是否在a的__proto__上。
+	但这不能准确判断一些值的类型，比较稳妥的办法是使用Object.prototype.toString.call(arr) ==="[object Array]";
 
 react:
 1):react createClass，创建的组件只能有一个根节点，这个根节点可以有任意层的子节点。
