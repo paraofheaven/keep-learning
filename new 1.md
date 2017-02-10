@@ -49,6 +49,10 @@ session和cookie的区别
 - webpack import&require css的坑：import命令会有提升效果，会提升到模块的头部，首先执行。
 - instanceof运算符可以用来判断某个构造函数的prototype属性是否存在另外一个要检测对象的原型链上。如a instanceof A ,判断A.prototype是否在a的__proto__上。
 	但这不能准确判断一些值的类型，比较稳妥的办法是使用Object.prototype.toString.call(arr) ==="[object Array]";
+	
+	
+- 前端资源缓存：设置 Cache-Control里的max-age，使页面资源请求的返回码为304，让浏览器直接使用本地缓存
+	参考http://web.jobbole.com/90167/
 
 react:
 1):react createClass，创建的组件只能有一个根节点，这个根节点可以有任意层的子节点。
