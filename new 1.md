@@ -4,7 +4,8 @@ promise，loadsh（学习），react，vue2.0
 iview中notice组件实现的原理
 CSS3动画
 去设计一个编译器
-Modx
+mobx
+momentjs
 
 
 模糊的知识点：
@@ -53,7 +54,12 @@ session和cookie的区别
 	
 - 前端资源缓存：设置 Cache-Control里的max-age，使页面资源请求的返回码为304，让浏览器直接使用本地缓存
 	参考http://web.jobbole.com/90167/
+	Cache-control: max-age=5
+	表示当访问此网页后的5秒内再次访问不会去服务器
 
+	
+- fetch 中params中的credentials属性表示cookies是否能跨域得到。有三个值"omit"（默认）,"same-origin"以及"include"。
+	参考https://www.w3ctech.com/topic/854
 react:
 1):react createClass，创建的组件只能有一个根节点，这个根节点可以有任意层的子节点。
 2):不要直接修改state,而应该使用setState（应该是用于触发组件lifecycle hook）。唯一一个可以直接修改state的地方是constructor。
