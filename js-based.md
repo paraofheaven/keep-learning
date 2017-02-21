@@ -6,6 +6,8 @@ CSS3动画
 去设计一个编译器
 mobx
 momentjs
+express
+redux
 
 
 模糊的知识点：
