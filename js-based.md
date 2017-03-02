@@ -8,6 +8,7 @@ mobx
 momentjs
 express
 redux
+bluebird
 
 
 模糊的知识点：
