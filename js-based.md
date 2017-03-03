@@ -9,6 +9,8 @@ momentjs
 express
 redux
 bluebird
+webpack plugin和loader的区别
+js事件队列理解（Event Loop）
 
 
 模糊的知识点：
@@ -53,6 +55,8 @@ session和cookie的区别
 - webpack import&require css的坑：import命令会有提升效果，会提升到模块的头部，首先执行。
 - instanceof运算符可以用来判断某个构造函数的prototype属性是否存在另外一个要检测对象的原型链上。如a instanceof A ,判断A.prototype是否在a的__proto__上。
 	但这不能准确判断一些值的类型，比较稳妥的办法是使用Object.prototype.toString.call(arr) ==="[object Array]";
+- 传入参数作为key来组成对象。利用JSON.parse('{"'+key+'" : "'+value+'"}');
+
 	
 	
 - 前端资源缓存：设置 Cache-Control里的max-age，使页面资源请求的返回码为304，让浏览器直接使用本地缓存
@@ -72,6 +76,8 @@ react:
 6):immutable优化react的re-render操作
 
 
+
+（js事件队列与执行栈）http://www.ruanyifeng.com/blog/2014/10/event-loop.html
 (全站HTTPS来了)[http://mp.weixin.qq.com/s?__biz=MzA3NTYzODYzMg==&mid=402615812&idx=1&sn=b6dae639119bb66e7025321254b8d973&scene=1&srcid=122439MA3l7gRwfjgNOB76pA#rd]
 (魅族SF博客)[https://segmentfault.com/blog/meizu]
 
