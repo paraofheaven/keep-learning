@@ -56,6 +56,7 @@ session和cookie的区别
 - instanceof运算符可以用来判断某个构造函数的prototype属性是否存在另外一个要检测对象的原型链上。如a instanceof A ,判断A.prototype是否在a的__proto__上。
 	但这不能准确判断一些值的类型，比较稳妥的办法是使用Object.prototype.toString.call(arr) ==="[object Array]";
 - 传入参数作为key来组成对象。利用JSON.parse('{"'+key+'" : "'+value+'"}');
+- git版本管理的问题
 
 	
 	
