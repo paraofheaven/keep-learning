@@ -9,6 +9,7 @@ momentjs
 express
 redux
 bluebird
+async和await
 webpack plugin和loader的区别
 js事件队列理解（Event Loop）
 
@@ -57,6 +58,7 @@ session和cookie的区别
 	但这不能准确判断一些值的类型，比较稳妥的办法是使用Object.prototype.toString.call(arr) ==="[object Array]";
 - 传入参数作为key来组成对象。利用JSON.parse('{"'+key+'" : "'+value+'"}');
 - git版本管理的问题
+- svn为什么大家都不用切换分支的方法，因为svn切换分支太慢了。
 
 	
 	
@@ -75,6 +77,10 @@ react:
 4):使用shouldComponentUpdate判断组件是否应该更新，如果应该，再对比新旧Dom树来判断是够需要更新dom树
 5):pureComponent的使用：http://www.open-open.com/lib/view/1484466792204,注意state对象的使用
 6):immutable优化react的re-render操作
+
+
+日常错误集合：
+1) 打包的文件含一个common的方法，该方法不规范导致页面执行两次。
 
 
 
