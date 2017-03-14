@@ -12,6 +12,7 @@ bluebird
 async和await
 webpack plugin和loader的区别
 js事件队列理解（Event Loop）
+express中间件开发
 
 
 模糊的知识点：
