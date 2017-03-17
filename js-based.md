@@ -1,6 +1,6 @@
 
 不懂得知识点：
-promise，loadsh（学习），react，vue2.0
+promise，lodash（学习），react，vue2.0
 iview中notice组件实现的原理
 CSS3动画
 去设计一个编译器
