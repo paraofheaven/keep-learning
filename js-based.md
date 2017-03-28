@@ -80,11 +80,12 @@ react:
 6):immutable优化react的re-render操作
 
 
+
 日常错误集合：
 1) 打包的文件含一个common的方法，该方法不规范导致页面执行两次。
 
 
-
+（module定义）[https://webpack.js.org/concepts/modules/]
 （js事件队列与执行栈）http://www.ruanyifeng.com/blog/2014/10/event-loop.html
 (全站HTTPS来了)[http://mp.weixin.qq.com/s?__biz=MzA3NTYzODYzMg==&mid=402615812&idx=1&sn=b6dae639119bb66e7025321254b8d973&scene=1&srcid=122439MA3l7gRwfjgNOB76pA#rd]
 (魅族SF博客)[https://segmentfault.com/blog/meizu]
