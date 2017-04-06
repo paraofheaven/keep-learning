@@ -83,6 +83,7 @@ react:
 
 日常错误集合：
 1) 打包的文件含一个common的方法，该方法不规范导致页面执行两次。
+2) Jquery实例有index方法可以获取当前元素的下标，如$("ul li").index(this);
 
 
 （module定义）[https://webpack.js.org/concepts/modules/]
