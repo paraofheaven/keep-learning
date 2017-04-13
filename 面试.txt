@@ -1,0 +1,48 @@
+js promise：
+	jquery用$.Deferred实现了Promise规范。
+	返回一个Deferred对象，上面挂着一些熟悉的方法如：done、fail、then等。jquery就是用这个对象来注册异步操作的回调函数，修改并传递异步操作，
+		比如$.ajax就是一个deferred对象。
+	在ES6中定义了原生的Promise对象。可以通过new Promise来实例化。通过resolve和reject状态的改变来执行异步操作成功或失败的回调。不可中断！
+	promise.all,接受一个数组作为参数，其中都是promise的实例，如果不是，就调用promise.resolve方法将其转化成promise实例。
+
+js性能问题：使用事件代理：
+
+	任何可以冒泡的事件不仅仅可以在事件目标上进行处理，还可以在目标的任何祖先节点上处理。对于内容动态增加并且子节点都需要相同的事件处理函数的情况，可以把事件注册提到父节点上，这样就不需要为每个子节点注册事件监听了。
+	选择：现有的js库都采用observe方式来创建事件监听,其实现上隔离了dom对象和事件处理函数之间的循环引用,所以应该尽量采用这种方式来创建事件监听
+
+	按需加载图片Lazy Load。根据设备像素比选择合适的图片尺寸。例如在我们某个产品中：图片加载速度比图片质量更重要；我们最终使用了 1.5 倍图，并且在图床缩放图片时，加了一点点锐化效果。最终图片体积很小，质量也尚可接受。
+	图片使用使用压缩比例更高的 WEBP 格式。
+
+	简化页面 DOM 结构，CSS 过多地触发 Layout/Paint/Composite。
+	预先保存重复使用的变量。比如nodelist
+	避免全局变量污染，尽可能全部使用常量，字母大写，各单词之间用_下划线来连接等规范方式。
+	避免循环引用。比如为元素绑定事件出现闭包时，此时上下文context引用了元素对象，元素引用了function，function中又引用了上下文。
+		解决办法是，绑定事件后尽可能将元素对象置空。
+	如果富页面用户会停留很长时间，需要考虑将无用dom元素的innerhtml字段置为空，以释放其子元素占用的内存。
+	尽量使用原生方法。
+	压缩合并代码。使用JSLint检查常见语法错误。
+	js代码应尽量以文件的形式引入进来，必要的时候应当使用cdn。script标签应优先放在body的底部。
+
+CSS position:relative和absolute：
+	absolute和float会使元素形成BFC（块级格式化上下文） BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素。
+	浮动会造成高度塌陷。
+
+	translate:transform的一个方法,根据给定的 left和 top移动。 	transform: translate(50px, 100px);
+	transform:rotate（旋转） scale（缩放）
+	transition：允许CSS属性值在一定的时间区间内平滑的过渡、
+				property:
+                duration:持续时间
+               	timing-function:ease等
+               	delay:延迟
+
+HTTPS和HTTP2.0
+	在浏览器发送 HTTP 报文前，还得先跟服务端建立 TLS 连接。
+	HTTPS 网站的所有外链资源（CSS、JS、图片、音频、字体文件、异步接口、表单 action 地址等等）都需要升级为 HTTPS
+
+	HTTP/2 是复用了一个 TCP 连接进行多次传输。
+	HTTP/2 会适度地合并资源文件，压缩请求头。
+	与HTTP 1.1的完全语义兼容···
+	基于 TLS 部署，也就是要需要先配置 HTTPS ，因为浏览器均表示只支持 HTTP/2 Over TLS
+
+animation原生实现：
+	setInterval/setTimeout.利用定时器，在一定时间内（duration），以一定的间隔（frameTime）执行动画函数（callback）
