@@ -1,0 +1,2 @@
+淘宝天猫产品API：https://ald.taobao.com/recommend.htm?recommendItemIds=524251757444&needCount=16&appID=03130
+京东产品价格API：http://p.3.cn/prices/mgets?skuIds=J_4864120&type=1
